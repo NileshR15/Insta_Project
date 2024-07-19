@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+    <div id="main">
+        <div class="color">
+          <div class="container">
+            <h1>Instagram</h1>
+            <div class="top">
+                <div class="text">
+                    Sign up to see photos and videos from your friends.
+                </div>
+                <div class="other">
+                    <div class="line1"><hr></div>
+                    <div class="word"><h3>OR</h3></div>
+                    <div class="line2"><hr></div>
+                </div>
+            </div>
+
+            <div class="mid">
+                <div class="register">
+                        <form action="saveinsta.jsp" method="post">
+                            <label for="email">
+                                <input type="text" name="t1" id="email" size="38" placeholder=" Name">
+                            </label>
+                            
+                            <label for="Fname">
+                                <input type="text" name="t2" id="Fname" size="38" placeholder=" UserName" >
+                            </label>
+
+                            <label for="Uname">
+                                <input type="text" name="t3" id="Uname" size="38" placeholder=" Password">
+                            </label>
+
+                            <label for="pass">
+                                <input type="password" name="t4" id="pass" size="38" placeholder=" CPassword" class="pass">
+                            </label>
+                                                    
+					           <div class="gender-details">
+					          <input type="radio" name="t5" id="dot-1" value="Male">
+					          <input type="radio" name="t5" id="dot-2" value="Female">
+					          <div class="category">
+					            <label for="dot-1">
+					            <span class="dot one"></span>
+					            <span class="gender">Male</span>
+					          </label>
+					          <label for="dot-2">
+					            <span class="dot two"></span>
+					            <span class="gender">Female</span>
+					          </label>
+					         
+					          </div>
+					        </div>                  
+                            
+                            <div class="input-box"> 
+                         <label>Birth Date</label>
+                         <input type="date" placeholder="Enter birth date" name="t6" required />
+                      </div>
+                     
+                            <input type="submit" onclick="password()" class="regb" value="Sign Up">
+                        </form>
+                </div>
+                <br>
+                <div class="terms">
+                    By signing up, you agree to our <a class="conditions" href="https://help.instagram.com/581066165581870" target="_blank">Terms</a>, <a class="conditions" href="https://help.instagram.com/519522125107875" target="_blank">Data Policy</a><br> and <a class="conditions" href="https://help.instagram.com/1896641480634370?ref=ig" target="_blank" >Cookies Policy</a> .
+                </div>
+            </div>
+          </div>
+
+          <div class="container2">
+            <div class="logopt">
+                Have an account? <a class="logg" href="index.html" target="_blank">Log in</a>
+            </div>
+          </div>
+        </div>
+    </div>
+
+</body>
+</html>
+<style>
+
+ *{
+            margin: 0;
+            padding: 0;
+
+        }
+
+        #main{
+            display: flex;
+            
+        }
+
+
+        .color{
+            width: 1538px;
+            /* aspect-ratio: auto 1518/ 696; */
+            height: 716px;
+            background: linear-gradient(#8a3ab9 2%, #e95950 5%, #bc2a8d 30%, #e0b559 40%,#fbad50 ,#cd486b, #4c68d7);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            
+        }
+
+        .container{
+            height: 550px;
+            width:400px;
+            background-color: rgb(255, 255, 255);
+            border: 1px solid black;
+            text-align: center;
+            margin-bottom: 7px;
+        }
+
+        h1{
+            font: 3.4rem 'Dancing Script', cursive;
+        }
+
+        /* .top{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        } */
+
+        .text{
+            padding: 28px;
+            padding-top: 20px;
+            font: 1.1em Helvetica, sans-serif;
+            color:rgb(160, 155, 148);
+            font-weight: 600;
+            padding-bottom: 20px;
+        }
+
+        .logbutton{
+            background-color: rgb(0, 149, 246);
+            width: 15rem;
+            height: 2.2rem;
+            border-style: none;
+            border-radius: 0.5em;
+            
+        }
+
+        #img{
+            padding-right: 5px;
+            padding-top: 1px;
+            
+        }
+
+        .link{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            color: #fff;
+            font: 1em "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        .other{
+            display:flex;
+            font: 1em "calibri", "sans-serif";
+            padding: 15px;
+            color: rgb(216, 214, 211);
+            /* font: weight 1px;; */
+        }
+
+        .line1{
+            width: 50%;
+            padding: 12px 11px 0px 30px;
+        }
+    
+        .line2{
+            width: 50%;
+            padding: 12px 30px 0px 11px;
+        }
+
+        hr{
+            color: rgb(255, 255, 255);
+        }
+
+        #email,#pass,#Uname, #Fname{
+            height: 30px;
+            padding-bottom: 3px;
+            background: rgb(248, 250, 248);
+            border: 1px solid rgb(163, 160, 160);
+        }
+
+        #pass,#Uname, #Fname, #email{
+            margin: 5px 0 5px 0;
+        }
+
+        .regb{
+            margin-top: 13px;
+            background-color: rgb(0, 149, 246);
+            width: 16rem;
+            height: 2rem;
+            border-style: none;
+            border-radius: 0.5em;
+            color: #fff;
+            font: 1.1em "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            font-weight: 600;
+        }
+
+        .terms{
+            font: 0.7em "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            font-weight: 400;
+            color: rgb(153, 140, 140);
+            padding: 5px;
+        }
+
+        .conditions{
+            text-decoration: none;
+            color: #000;
+        }
+
+    .container2{
+            height: 80px;
+            width:400px;
+            background-color: rgb(255, 255, 255);
+            border: 1px solid black;
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+    }
+
+    .logopt{
+        font: 1em "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    .logg{
+        text-decoration: none;
+        color:rgba(var(--d69,0,149,246),1);
+    }
+
+</style>
